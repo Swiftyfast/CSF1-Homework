@@ -50,14 +50,16 @@ namespace CSF1Homework
                         if(userEnteredMenu == "A")
                         {
                             Console.WriteLine("How much would you like to deposit?");
-                            string depositAmountString = Console.ReadLine();
-                            Console.WriteLine("{0:c} has been deposited into {1}.", depositAmountString, accountNumber);
+                            decimal depositAmountDecimal = Convert.ToDecimal(Console.ReadLine());
+                            //string depositAmountString = Console.ReadLine();
+                            Console.WriteLine("{0:c} has been deposited into {1}.", depositAmountDecimal, accountNumber);
                             switchCheck = "menu2";
                         } else if (userEnteredMenu == "B")
                         {
                             Console.WriteLine("How much would you like to withdraw?");
-                            string withdrawAmountString = Console.ReadLine();
-                            Console.WriteLine("{0:c} has been withdrawen from {1}.", withdrawAmountString, accountNumber);
+                            decimal withdrawAmountDecimal = Convert.ToDecimal(Console.ReadLine());
+                            //string withdrawAmountString = Console.ReadLine();
+                            Console.WriteLine("{0:c} has been withdrawen from {1}.", withdrawAmountDecimal, accountNumber);
                             switchCheck = "menu2";
                         } else if (userEnteredMenu == "C")
                         {
